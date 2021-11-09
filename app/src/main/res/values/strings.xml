@@ -6,4 +6,12 @@
     <string name="txt_btn_login">Log In</string>
     <string name="txt_btn_sign_up">Sign Up</string>
     <string name="txt_btn_add_product">Agregar producto</string>
+    <string name="title_new_user_user_form">Crear nuevo usuario</string>
+    <string name="hint_name_user_form">Escriba su nombre</string>
+    <string name="hint_email_user_form">Escriba su email</string>
+    <string name="hint_document_user_form">Ingrese su documento</string>
+    <string name="hint_urlphoto_user_form">Ingrese URL de la foto</string>
+    <string name="create_user_form">Crear cuenta</string>
+    <string name="hint_password_user_form">Escriba su contraseña de cuenta</string>
+    <string name="tv_title_users_list">Lista de Usuarios</string>
 </resources>
