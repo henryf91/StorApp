@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StorApp</string>
+    <string name="txt_login">Inicio de Sesión</string>
+    <string name="hint_email">Escriba su email</string>
+    <string name="hint_password">Escriba su password</string>
+    <string name="txt_btn_login">Log In</string>
+    <string name="txt_btn_sign_up">Sign Up</string>
+    <string name="txt_btn_add_product">Agregar producto</string>
+</resources>
