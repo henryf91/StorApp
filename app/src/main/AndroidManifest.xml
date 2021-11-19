@@ -12,12 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StorApp">
         <activity
-            android:name=".UserListActivity"
+            android:name=".view.activity.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.ProductFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.ProductListActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".UserFormActivity"
+            android:name=".view.activity.UserListActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".view.activity.UserFormActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".view.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,12 +41,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ProductListActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
     </application>
 
 </manifest>

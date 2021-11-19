@@ -6,7 +6,7 @@
     <data>
     <variable
         name="userAdapter"
-        type="com.edu.unab.mgads.henryf.storapp.UserAdapter" />
+        type="com.edu.unab.mgads.henryf.storapp.view.adapter.UserAdapter" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

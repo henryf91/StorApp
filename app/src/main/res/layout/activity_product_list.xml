@@ -6,20 +6,32 @@
     <data>
         <variable
             name="adapter"
-            type="com.edu.unab.mgads.henryf.storapp.ProductAdapter" />
+            type="com.edu.unab.mgads.henryf.storapp.view.adapter.ProductAdapter" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ProductListActivity">
+        tools:context=".view.activity.ProductListActivity">
+
+        <Button
+            android:id="@+id/bt_logout_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesion"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="16dp"
+            />
 
         <Button
             android:id="@+id/bt_add_product_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/txt_btn_add_product"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt_logout_list"
+            app:layout_constraintBaseline_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginHorizontal="16dp"
@@ -30,13 +42,13 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:adapter="@{adapter}"
             app:layout_constraintTop_toBottomOf="@id/bt_add_product_list"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginTop="8dp"
-            android:adapter="@{adapter}"
-            />
 
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
