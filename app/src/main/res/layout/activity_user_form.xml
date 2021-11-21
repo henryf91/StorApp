@@ -86,7 +86,7 @@
                 android:ems="10"
                 android:hint="@string/hint_password_user_form"
                 android:inputType="textPassword"
-                android:text="@={user.password}"
+                android:text="Clave"
                 app:layout_constraintTop_toBottomOf="@id/et_urlphoto_user_form"
                 android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="parent"

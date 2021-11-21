@@ -6,6 +6,10 @@
     >
 
     <data>
+        <import type="android.view.View" />
+        <variable
+            name="user"
+            type="String" />
         <variable
             name="product"
             type="com.edu.unab.mgads.henryf.storapp.model.entity.Product" />
@@ -65,13 +69,25 @@
             app:layout_constraintEnd_toStartOf="@id/bt_edit_product_detail"
             />
 
+        <com.google.android.gms.maps.MapView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:id="@+id/mv_product_detail"
+            app:layout_constraintTop_toBottomOf="@id/tv_description_product_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="16dp"
+            android:layout_marginHorizontal="16dp"
+            />
+
         <Button
             android:id="@+id/bt_remove_product_detail"
             android:layout_marginVertical="8dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/tv_description_product_detail"
+            app:layout_constraintTop_toBottomOf="@+id/mv_product_detail"
             android:text="@string/txt_remove"
+            android:visibility="@{product.ownerId.equals(user) ? View.VISIBLE : View.GONE}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/bt_edit_product_detail"
             android:layout_marginStart="8dp"
@@ -82,7 +98,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/txt_edit"
-            app:layout_constraintTop_toBottomOf="@id/tv_description_product_detail"
+            android:visibility="@{product.ownerId.equals(user) ? View.VISIBLE : View.GONE}"
+            app:layout_constraintTop_toBottomOf="@id/mv_product_detail"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/bt_remove_product_detail"
             android:layout_marginStart="8dp"

@@ -4,6 +4,12 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,6 +18,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StorApp">
         <activity
+            android:name=".view.activity.MapActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".view.activity.ProductDetailActivity"
             android:exported="false" />
         <activity
@@ -19,19 +30,13 @@
             android:exported="false" />
         <activity
             android:name=".view.activity.ProductListActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".view.activity.UserListActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".view.activity.UserFormActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".view.activity.MainActivity"
             android:exported="true">
@@ -41,6 +46,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.edu.unab.mgads.henryf.storapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCljciYzr8-qYU6hCctBWpPK3370XLtnxo" />
     </application>
 
 </manifest>

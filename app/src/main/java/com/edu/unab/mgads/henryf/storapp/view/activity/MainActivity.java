@@ -11,6 +11,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.edu.unab.mgads.henryf.storapp.R;
+import com.edu.unab.mgads.henryf.storapp.model.entity.User;
 import com.edu.unab.mgads.henryf.storapp.viewmodel.UserViewModel;
 import com.edu.unab.mgads.henryf.storapp.databinding.ActivityMainBinding;
 
@@ -60,6 +61,29 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        mainBinding.btSignupLogin.setOnClickListener(view -> {
+            User myUser = new User();
+            myUser.setName("Alejandro");
+            myUser.setEmail("alejo@mail.com");
+            myUser.setDocument("1234567");
+            myUser.setUrlPicture("//");
+            userViewModel.signUp(myUser, "987654321");
+            userViewModel.getUser().observe(MainActivity.this, user -> {
+                if(user != null){
+                    SharedPreferences.Editor editor = pref.edit();
+                    editor.putBoolean("authenticated", true);
+                    editor.apply();
+                    Toast.makeText(MainActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
+
+                    Intent i = new Intent(MainActivity.this, ProductListActivity.class);
+                    finish(); /// no vuelve atras
+                    startActivity(i) ;
+                }else{
+                    Toast.makeText(MainActivity.this, "Datos errados", Toast.LENGTH_SHORT).show();
+                }
+            });
+        });
+
         //Log.d(LIFE_CYCLE, "Método OnCreate");
     }
 
@@ -85,5 +109,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         Log.d(LIFE_CYCLE, "Método OnRestart");
+
     }
 }

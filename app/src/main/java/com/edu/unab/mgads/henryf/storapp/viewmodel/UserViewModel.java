@@ -57,6 +57,10 @@ public class UserViewModel extends ViewModel {
         repository.login(this.etEmail, this.etPassword);
     }
 
+    public void signUp(User myUser, String pass){
+        repository.createUser(myUser, pass);
+    }
+
     public void createUser(){
 
     }
