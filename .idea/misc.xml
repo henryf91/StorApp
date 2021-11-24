@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/UNAB/mobile/StorApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/UNAB/mobile/StorApp/app/src/main/res/layout/activity_product_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/UNAB/mobile/StorApp/app/src/main/res/layout/activity_product_form.xml" value="0.36666666666666664" />
+        <entry key="..\:/UNAB/mobile/StorApp/app/src/main/res/layout/activity_product_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/UNAB/mobile/StorApp/app/src/main/res/layout/activity_user_form.xml" value="0.3567708333333333" />
+        <entry key="..\:/UNAB/mobile/StorApp/app/src/main/res/layout/activity_user_list.xml" value="0.3567708333333333" />
+        <entry key="..\:/UNAB/mobile/StorApp/app/src/main/res/layout/item_product.xml" value="0.36666666666666664" />
+        <entry key="..\:/UNAB/mobile/StorApp/app/src/main/res/layout/item_user.xml" value="0.3567708333333333" />
+        <entry key="..\:/UNAB/mobile/v2/StorApp/app/src/main/res/layout/activity_main.xml" value="0.3567708333333333" />
+        <entry key="..\:/UNAB/mobile/v2/StorApp/app/src/main/res/layout/activity_product_detail.xml" value="0.3567708333333333" />
+        <entry key="..\:/UNAB/mobile/v2/StorApp/app/src/main/res/layout/activity_product_form.xml" value="0.3567708333333333" />
+        <entry key="..\:/UNAB/mobile/v2/StorApp/app/src/main/res/layout/activity_product_list.xml" value="0.3567708333333333" />
+        <entry key="..\:/UNAB/mobile/v2/StorApp/app/src/main/res/layout/activity_user_form.xml" value="0.3567708333333333" />
+        <entry key="..\:/UNAB/mobile/v2/StorApp/app/src/main/res/layout/activity_user_list.xml" value="0.33" />
+        <entry key="..\:/UNAB/mobile/v2/StorApp/app/src/main/res/layout/item_product.xml" value="0.3567708333333333" />
+        <entry key="..\:/UNAB/mobile/v2/StorApp/app/src/main/res/layout/item_user.xml" value="0.20104166666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

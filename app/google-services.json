@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1017100952564",
+    "project_id": "storapp-4d9ac",
+    "storage_bucket": "storapp-4d9ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017100952564:android:30bdbe377b7c20eeef8fa1",
+        "android_client_info": {
+          "package_name": "com.edu.unab.mgads.henryf.storapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017100952564-1cri1j3ia602ellbc4qovhslibud747v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-quGf4MQDYy12oeC-2M90vrtwHbbqBEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017100952564-1cri1j3ia602ellbc4qovhslibud747v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

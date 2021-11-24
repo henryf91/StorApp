@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">StorApp</string>
+    <string name="txt_login">Inicio de Sesión</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="txt_btn_login">Log In</string>
+    <string name="txt_btn_sign_up">Sign Up</string>
+    <string name="txt_btn_add_product">Agregar producto</string>
+    <string name="hint_name_product_form">Escriba el nombre del producto</string>
+    <string name="hint_price_product_form">Escriba el precio del producto</string>
+    <string name="hint_description_product_form">Escriba la descripción del producto</string>
+    <string name="txt_remove">Eliminar</string>
+    <string name="txt_edit">Editar</string>
+    <string name="txt_btn_edit_product">Editar producto</string>
+    <string name="preferences_name">storapp_preferences</string>
+    <string name="tv_title_users_list">Lista de Usuarios</string>
+    <string name="title_new_user_user_form">Crear nuevo usuario</string>
+    <string name="hint_name_user_form">Escriba su nombre</string>
+    <string name="hint_email_user_form">Escriba su email</string>
+    <string name="hint_document_user_form">Ingrese su documento</string>
+    <string name="hint_urlphoto_user_form">Ingrese URL de la foto</string>
+    <string name="create_user_form">Crear cuenta</string>
+    <string name="hint_password_user_form">Escriba su contraseña de cuenta</string>
+    <string name="txt_bt_sign_out">Cerrar Sesion</string>
+    <string name="txt_bt_see_user_list">Ver Lista de usuarios</string>
+</resources>
